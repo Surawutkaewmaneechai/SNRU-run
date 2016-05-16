@@ -49,5 +49,13 @@ SignUp extends AppCompatActivity {
         userString = UserEditText.getText().toString().trim();
         PasswordString = PasswordEditText.getText().toString().trim();
 
+        //Check Space
+        if (nameString.equals("")  || userString.equals("")  || PasswordString.equals("")  ) {
+
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง");
+        } else {
+        }
+
     }
 }//Main Class
